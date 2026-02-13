@@ -5,6 +5,7 @@
             box-sizing: border-box;
         }
         body{
+              background-image: url(https://pngtree.com/free-backgrounds); 
             height: 100vh;
             display: flex;
             align-items: center;
