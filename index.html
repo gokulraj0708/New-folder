@@ -8,6 +8,38 @@
     <link href="styles.css" rel="stylesheet/>
     
 </head>
+<style>
+body {
+    margin: 0;
+    background: #0f2027;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+</style>
+
+<div class="circle" style="left:10%; animation-duration:8s;"></div>
+<div class="circle" style="left:40%; animation-duration:12s;"></div>
+<div class="circle" style="left:70%; animation-duration:10s;"></div>
 <body>
     <div class="container">
     <input type="email"
